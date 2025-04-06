@@ -29,15 +29,15 @@ Jy = 2.38e-2;
 %% From Identification
 %% Effects from states
 % Stiffness (N-m/rad)[found experimentally] 
-Ksp = 0; % Pitch axis
+Ksp = 0.05; % Pitch axis
 
 % Viscous damping (N-m-s/rad) [found experimentally]
-Dp = 0; % pitch axis
-Dy = 0; % yaw axis
+Dp = 0.01; % pitch axis
+Dy = 0.05; % yaw axis
 
 %% Effects from controls
 % Thrust-torque constant (N-m/V) [found experimentally]
-Kpp = 0; % thrust acting on pitch from pitch motor 
-Kyy = 0; % thrust acting on yaw from yaw motor
-Kpy = 0; % thrust acting on pitch from yaw motor
-Kyp = -0; % thrust acting on yaw from pitch motor
+Kpp = 0.005; % thrust acting on pitch from pitch motor 
+Kyy = 0.005; % thrust acting on yaw from yaw motor
+Kpy = 0.005; % thrust acting on pitch from yaw motor
+Kyp = -0.005; % thrust acting on yaw from pitch motor
